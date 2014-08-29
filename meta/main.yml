@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: 'Rohan Liston'
+  description: 'Installs the latest version of MongoDB.'
+  company: 'SSIL'
+  license: 'BSD'
+  min_ansible_version: 1.6
+  platforms:
+  - name: 'Ubuntu'
+    versions:
+      - 'precise'
+  categories:
+    - 'database'
+    - 'database:nosql'
+dependencies: []
