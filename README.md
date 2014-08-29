@@ -1,4 +1,4 @@
-# Golang role for Ansible
+# MongoDB role for Ansible
 
 Installs the latest version of MongoDB from the 10gen PPA.
 
