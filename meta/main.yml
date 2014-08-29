@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: 'Rohan Liston'
-  description: 'Installs the latest version of MongoDB.'
+  description: 'Installs the latest version of MongoDB from the 10gen PPA.'
   company: 'SSIL'
   license: 'BSD'
   min_ansible_version: 1.6

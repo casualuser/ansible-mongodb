@@ -1,4 +1,12 @@
 ---
+- name: 'Install dependencies'
+  sudo: 'yes'
+  apt: >
+    pkg={{ item }}
+    update_cache=yes
+  with_items:
+    - 'python-pycurl' # Required by Ansible for adding apt repositories
+
 - name: 'Add MongoDB apt key'
   sudo: 'yes'
   apt_key: >
