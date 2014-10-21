@@ -55,5 +55,5 @@
     name={{ mongodb_backup_cron_name }}
     special_time={{ mongodb_backup_frequency }}
     hour={{ mongodb_backup_hour_of_day }}
-    job="sh {{ mongodb_backup_script_path }}"
+    dest="sh {{ mongodb_backup_script_dir }}/{{ mongodb_backup_script_filename }}"
     cron_file={{ mongodb_backup_cron_filename }}
