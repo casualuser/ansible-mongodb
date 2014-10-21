@@ -29,3 +29,22 @@
     pkg=mongodb-10gen
     state=present
     update_cache=true
+
+- name: 'Install backup script'
+  tags: 'mongodb'
+  sudo: 'yes'
+  template: >
+    src=mongo_dump.sh.j2
+    dest={{ mongodb_backup_script_path }}
+    owner=root
+    group=backup
+
+- name: 'Set up cron job for automated backups'
+  tags: 'mongodb'
+  sudo: 'yes'
+  cron: >
+    name={{ mongodb_backup_cron_name }}
+    special_time={{ mongodb_backup_frequency }}
+    hour={{ mongodb_backup_hour_of_day }}
+    job="sh {{ mongodb_backup_script_path }}"
+    cron_file={{ mongodb_backup_cron_filename }}
