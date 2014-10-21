@@ -56,3 +56,4 @@
     special_time={{ mongodb_backup_frequency }}
     job="sh {{ mongodb_backup_script_dir }}/{{ mongodb_backup_script_filename }}"
     cron_file={{ mongodb_backup_cron_filename }}
+    user=root
