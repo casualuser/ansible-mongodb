@@ -53,7 +53,6 @@
   sudo: 'yes'
   cron: >
     name="{{ mongodb_backup_cron_name }}"
-    special_time=daily
-    hour="{{ mongodb_backup_hour_of_day }}"
+    special_time={{ mongodb_backup_frequency }}
     job="sh {{ mongodb_backup_script_dir }}/{{ mongodb_backup_script_filename }}"
     cron_file={{ mongodb_backup_cron_filename }}
