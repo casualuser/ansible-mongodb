@@ -10,14 +10,15 @@ Tested on Ubuntu 12.04 Server.
 
 The default variables are as follows:
 
-    mongodb_backup_cron_filename: 'mongodb_backup'
-    mongodb_backup_cron_name:     'Back up MongoDB databases'
-    mongodb_backup_frequency:     'daily'
-    mongodb_backup_hour_of_day:   3
-    mongodb_backup_lifetime_days: 14
-    mongodb_backup_file_prefix:   'mongodb_backup'
-    mongodb_backup_dir:           '/var/backup/mongodb_backup'
-    mongodb_backup_script_path:   '/etc/mongodb_backup/mongodb_backup.sh'
+    mongodb_backup_cron_filename:   'mongodb_backup'
+    mongodb_backup_cron_name:       'Back up MongoDB databases'
+    mongodb_backup_frequency:       'daily'
+    mongodb_backup_hour_of_day:     3
+    mongodb_backup_lifetime_days:   14
+    mongodb_backup_file_prefix:     'mongodb_backup'
+    mongodb_backup_dir:             '/var/backup/mongodb_backup'
+    mongodb_backup_script_dir:      '/etc/mongodb_backup/'
+    mongodb_backup_script_filename: 'mongodb_backup.sh'
 
 ## Example Playbook
 
