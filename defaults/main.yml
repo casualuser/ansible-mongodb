@@ -1,5 +1,4 @@
 ---
-mongodb_backup_cron_filename:   'mongodb_backup'
 mongodb_backup_cron_name:       'Back up MongoDB databases'
 mongodb_backup_frequency:       'daily'
 mongodb_backup_lifetime_days:   14
