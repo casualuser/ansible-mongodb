@@ -34,7 +34,7 @@
   tags: 'mongodb'
   sudo: 'yes'
   file: >
-    path={{ mongodb_backup_script_dir }}/{{ mongodb_backup_script_filename }}
+    path={{ mongodb_backup_script_dir }}
     state=directory
     owner=root
     group=backup
