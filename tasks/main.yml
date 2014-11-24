@@ -26,7 +26,7 @@
   tags: 'mongodb'
   sudo: 'yes'
   apt: >
-    pkg=mongodb-10gen
+    pkg=mongodb-org
     state=present
     update_cache=true
 
